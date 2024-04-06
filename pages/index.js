@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OYO: India's best hotel Booking site for Sanitized Stay</title>
+        <title>OYO: India&lsquo;s best hotel Booking site for Sanitized Stay</title>
 
       </Head>
 
