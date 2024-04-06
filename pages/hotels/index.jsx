@@ -11,7 +11,7 @@ const Hotels = ({ hotels }) => {
     const [price, setPrice] = useState(3500);
     const [checkList, setCheckList] = useState([]);
 
-    const handleCheckList = async (e) => {
+    const handleCheckList = async () => {
         const { data } = await axios.get(`/api/facilities/search?val=${checkList}`);
         if (data?.hotels) {
             let newArray = data.hotels;
@@ -30,7 +30,7 @@ const Hotels = ({ hotels }) => {
         if (checkList) {
             handleCheckList();
         }
-    }, [handleCheckList]);
+    }, [checkList, handleCheckList]);
 
     return (
         <>
